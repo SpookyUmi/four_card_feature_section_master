@@ -1,0 +1,130 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  font-weight: 400;
+}
+
+.header {
+  text-align: center;
+}
+
+.thin {
+
+}
+
+.strong {
+
+}
+
+.header p {
+
+}
+
+.cyanblock {
+  height: 200px;
+  width: 300px;
+  /* margin: 13vw 11vw; */
+  border-top: 8px solid hsl(180, 62%, 55%);
+  border-radius: 6px;
+  box-shadow: 0 0 20px hsl(218, 22%, 80%);
+}
+
+.redblock {
+  height: 200px;
+  width: 300px;
+  /* margin: 2vw 20vw; */
+  border-top: 8px solid hsl(0, 78%, 62%);
+  border-radius: 6px;
+  box-shadow: 0 0 20px hsl(218, 22%, 80%);
+}
+
+.yellowblock {
+  height: 200px;
+  width: 300px;
+  /* margin: 2vw 20vw; */
+  border-top: 8px solid hsl(34, 97%, 64%);
+  border-radius: 6px;
+  box-shadow: 0 0 20px hsl(218, 22%, 80%);
+}
+
+.blueblock {
+  height: 200px;
+  width: 300px;
+  /* margin: 2vw 20vw; */
+  border-top: 8px solid hsl(212, 86%, 64%);
+  border-radius: 6px;
+  box-shadow: 0 0 20px hsl(218, 22%, 80%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Flexbox start */
+
+@media all and (max-width: 1440px) {
+
+  .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+  .column {
+  display: flex;
+  flex-direction: column;
+  }
+
+}
+
+@media all and (max-width: 800px) {
+
+  .column {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* .cyanblock {
+    order: 1;
+  }
+
+  .redblock {
+    order: 2;
+  }
+
+  .yellowblock {
+    order: 3;
+  }
+
+  .blueblock {
+    order: 4;
+  } */
+
+}
+
+@media all and (max-width: 400px) {
+
+  .container {
+    max-width: 320px;
+    flex-wrap: wrap;
+  }
+
+}
