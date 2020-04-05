@@ -137,7 +137,7 @@ img {
 
   .container {
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 5%;
   }
 
   .column {
@@ -146,9 +146,7 @@ img {
   }
 
   .header {
-    margin-left: 300px;
-    margin-right: 300px;
-    margin-bottom: 30px;
+    margin: auto 30% 2% 30%;
   }
 
 }
@@ -156,6 +154,6 @@ img {
 @media screen and (min-width: 1280px) {
 
   .header {
-    margin: auto 400px 30px 400px;
+    margin: auto 30% 2% 30%;
   }
 }
