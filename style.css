@@ -9,10 +9,12 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 0.9em;
+  font-size: 1.05em;
   color: hsl(229, 6%, 35%);
   background: hsl(0, 0%, 98%);
 }
+
+/* --- Header --- */
 
 .header {
   margin: 0.9em;
@@ -28,6 +30,8 @@ body {
   font-weight: 600;
   margin-top: 0;
 }
+
+/* --- Container --- */
 
 .container {
   display: flex;
@@ -80,6 +84,8 @@ img {
   margin: 25px;
 }
 
+/* --- Footer --- */
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -88,6 +94,8 @@ img {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/* --- Responsive --- */
 
 @media screen and (min-width: 768px) {
 
@@ -127,8 +135,8 @@ img {
   .redblock,
   .yellowblock,
   .blueblock {
-    max-height: 225px;
-    max-width: 325px;
+    max-height: 275px;
+    max-width: 375px;
   }
 
   .cyanblock, .blueblock {
@@ -151,9 +159,23 @@ img {
 
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1250px) {
 
   .header {
-    margin: auto 30% 2% 30%;
+    margin: auto 30vw 8vh 30vw;
+  }
+}
+
+@media screen and (min-width: 2500px) {
+
+    .header {
+    margin: auto 40vw 8vh 40vw;
+  }
+}
+
+@media screen and (max-height: 620px) {
+
+  img {
+    display: none;
   }
 }
